@@ -1,0 +1,19 @@
+.boxbg {
+    padding-top: 3px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: var(--unity-colors-box-background);
+    border-left-color: rgba(113, 113, 113, 0.34);
+    border-right-color: rgba(113, 113, 113, 0.34);
+    border-top-color: rgba(113, 113, 113, 0.34);
+    border-bottom-color: rgba(113, 113, 113, 0.34);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}

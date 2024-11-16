@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Resources/CoolTools/PropertyDrawerStyles.uss?fileID=7433441132597879392&amp;guid=828a0440cda7ff649866fb22d6b93205&amp;type=3#PropertyDrawerStyles" />
+    <ui:VisualElement name="VisualElement" class="boxbg">
+        <ui:VisualElement name="nameLayout" style="flex-grow: 1; flex-direction: row; background-color: rgb(64, 82, 71); padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;">
+            <ui:Label tabindex="-1" text="Property Name" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="-unity-font-style: bold; font-size: 13px; color: rgb(214, 241, 235); width: 40%; -unity-text-align: middle-left;" />
+            <uie:PropertyField name="fieldValue" binding-path="_value" label="=" style="width: 50%; position: relative; -unity-text-align: upper-right; padding-right: 10px; top: 1px; margin-left: 50px;" />
+        </ui:VisualElement>
+        <ui:Foldout text="Value Config" value="false" style="margin-left: 10px;">
+            <ui:VisualElement name="Space" style="flex-grow: 1; height: 15px;" />
+            <uie:PropertyField binding-path="_baseValue" name="fieldBaseValue" />
+            <uie:PropertyField binding-path="_formulaBaseValue" name="fieldFormula" tooltip="Assign a formula to calculate base value." style="width: 100%;" />
+            <uie:PropertyField binding-path="_offset" name="fieldOffset" />
+            <uie:PropertyField binding-path="_multiplier" name="fieldMult" />
+        </ui:Foldout>
+    </ui:VisualElement>
+</ui:UXML>
